@@ -1,6 +1,7 @@
 import React from 'react'
+import Img from 'gatsby-image'
 
-export default function Hero() {
+export default function Hero({image}) {
     return (
         <section className='px-40 py-20'>
             <main className="grid grid-cols-2">
@@ -14,9 +15,13 @@ export default function Hero() {
                     <p className='text-base text-gray-500'>By clicking the button, you are agreeing with our <a href="#" className='text-orange-500'>Terms & Conditions.</a></p>
                 </div>
                 <div className='relative'>
-                    <img src="/hero-image.png" className='w-full absolute -right-20 -top-16' alt="" />
+                    <Img fluid={image} className='w-full absolute -right-20 -top-16' />
                 </div>
             </main>
         </section>
     )
 }
+
+// graphql
+
+
