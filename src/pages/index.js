@@ -1,26 +1,31 @@
 import React from 'react'
-import { graphql } from 'gatsby'
 
-export default function Home({data}) {
-  console.log(data)
-  const {author, title} = data.site.siteMetadata
+// sections
+import Aboutus from '../sections/Aboutus'
+import Features from '../sections/Features'
+import Footer from '../sections/Footer'
+import Hero from '../sections/Hero'
+import InformationOne from '../sections/InformationOne'
+import InformationTwo from '../sections/InformationTwo'
+import Navbar from '../sections/Navbar'
+import Newsletter from '../sections/Newsletter'
+import Testimonials from '../sections/Testimonials'
+import Thrusted from '../sections/Thrusted'
+
+export default function Home() {
+
   return (
-    <div className='bg-red-500'>
-      <h1>{author}</h1>
-      <p>{title}</p>
-    </div>
+    <>
+      <Navbar />
+      <Hero />
+      <Aboutus />
+      <Features />
+      <InformationOne />
+      <InformationTwo />
+      <Testimonials />
+      <Thrusted />
+      <Newsletter />
+      <Footer />
+    </>
   )
 }
-
-export const query = graphql`
-  query SiteInfo {
-    site {
-      siteMetadata {
-        author
-        description
-        siteUrl
-        title
-      }
-    }
-  }
-`
