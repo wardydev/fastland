@@ -13,6 +13,7 @@ import Navbar from '../sections/Navbar'
 import Newsletter from '../sections/Newsletter'
 import Testimonials from '../sections/Testimonials'
 import Thrusted from '../sections/Thrusted'
+import Helmet from 'react-helmet'
 
 export default function Home({data}) {
   const heroImage = data.hero.childImageSharp.fluid
@@ -21,6 +22,16 @@ export default function Home({data}) {
 
   return (
     <>
+      <Helmet>
+        <meta charset={data.siteMetadata.siteMetadata.charset}/>
+        <meta name="Description" CONTENT={data.siteMetadata.siteMetadata.description}/>
+        <meta name="keyword" CONTENT={data.siteMetadata.siteMetadata.keyword}/>
+        <meta name="google-site-verification" content={data.siteMetadata.siteMetadata.googleSiteVerification}/>
+        <meta property="og:title" content={data.siteMetadata.siteMetadata.title} />
+        <title>{data.siteMetadata.siteMetadata.title}</title>
+        <meta name="robots" content={data.siteMetadata.siteMetadata.robots}/>
+      </Helmet>
+
       <Navbar />
       <Hero image={heroImage} />
       <Aboutus />
@@ -57,6 +68,17 @@ export const query = graphql`
         fluid {
           ...GatsbyImageSharpFluid
         }
+      }
+    }
+    siteMetadata: site {
+      siteMetadata {
+        author
+        charset
+        description
+        googleSiteVerification
+        keyword
+        robots
+        title
       }
     }
   }

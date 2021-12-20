@@ -11,7 +11,7 @@ export default function InformationOne({image}) {
                 <div>
                     <Img fluid={image} className="w-full mx-auto lg:mx-0" />
                 </div>
-                <div className='text-center lg:text-left'>
+                <div>
                     <HeadingMd title="Get instant growth result for business." column={true} />
                     <Paragraph title="Create custom landing pages with Fastland that converts more visitors than any website. Easy, Reliable & Fast." />
                 </div>

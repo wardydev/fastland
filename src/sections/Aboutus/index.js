@@ -12,7 +12,7 @@ export default function Aboutus() {
                     <HeadingMd title="Your business needs a better shape today." />
                     <Paragraph title="Create custom landing pages with Fastland that converts more visitors than any website. Easy & Fast." />
                 </div>
-                <div className="px-20 lg:px-0 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center gap-x-0 lg:gap-x-10 gap-y-8 lg:gap-y-0">
+                <div className="px-12 lg:px-0 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center gap-x-0 lg:gap-x-10 gap-y-8 lg:gap-y-0">
                     <div className='lg:text-left text-center'>
                         <div className='mb-4'>
                             <img src="/icon1.svg" className='w-auto mx-auto lg:mx-0' alt="" />

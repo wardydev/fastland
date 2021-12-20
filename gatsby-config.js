@@ -1,9 +1,13 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
-    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+    title: `Fastlands | Landing page maker and web converter`,
+    description: `Create custom landing pages with Fastland that converts more visitors than any website.`,
+    author: `wardydev`,
+    keyword: `landing page, convert website, web design, convert web to html`,
+    charset: `utf-8`,
+    googleSiteVerification: `+nxGUDJ4QpAZ5l9Bsjdi102tLVC21AIh5d1Nl23908vVuFHs34=`,
+    robots: `noindex,nofollow`
+
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
