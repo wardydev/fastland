@@ -19,11 +19,6 @@ export default function Home({data}) {
   const informationOneImage = data.informationOne.childImageSharp.fluid
   const informationTwoImage = data.informationTwo.childImageSharp.fluid
 
-
-  console.log("hero", heroImage)
-  console.log("imageone", informationOneImage)
-  console.log("imagetwo", informationTwoImage)
-
   return (
     <>
       <Navbar />

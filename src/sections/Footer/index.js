@@ -5,10 +5,10 @@ import ParagraphSm from '../../components/ParagraphSm'
 
 export default function Footer() {
     return (
-        <section className="px-40 pt-20 pb-10 bg-purple-700">
+        <section className="px-6 lg:px-40 pt-20 pb-10 bg-purple-700">
             <main>
-                <div className="flex items-start space-x-36 mb-14">
-                    <div className='w-1/4'>
+                <div className="flex flex-col lg:flex-row items-start space-x-0 lg:space-x-36 mb-14">
+                    <div className='w-full lg:w-1/4 mb-16 lg:mb-0'>
                         <Link to="">
                             <img src="/logo2.svg" className='mb-6' alt="" />
                         </Link>

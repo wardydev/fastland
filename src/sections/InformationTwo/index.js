@@ -6,14 +6,14 @@ import Paragraph from '../../components/Paragraph'
 
 export default function InformationTwo({image}) {
     return (
-        <section className="px-40 pb-20">
-            <main className='grid grid-cols-2 items-center gap-x-5'>
-                <div>
+        <section className="px-12 lg:px-40 pb-16 lg:pb-20">
+            <main className='grid ggrid-cols-1 lg:rid-cols-2 items-center gap-x-0 lg:gap-x-5'>
+                <div className='text-center lg:text-left order-2 lg:order-1'>
                     <HeadingMd title="Save your extra money by using our service." column={true} />
                     <Paragraph title="Create custom landing pages with Fastland that converts more visitors than any website. Easy, Reliable & Fast." />
                 </div>
-                <div>
-                    <Img fluid={image} className="w-full" />
+                <div className='order-1 lg:order-2'>
+                    <Img fluid={image} className="w-full mx-auto lg:mx-0" />
                 </div>
             </main>
         </section>
